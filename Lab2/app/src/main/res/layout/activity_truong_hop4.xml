@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:padding="16dp" android:fitsSystemWindows="true">
+
+    <EditText android:id="@+id/etId" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Mã NV" />
+    <EditText android:id="@+id/etName" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Tên NV" />
+
+    <RadioGroup android:id="@+id/rgType" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <RadioButton android:id="@+id/radChinhThuc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chính thức" android:checked="true"/>
+        <RadioButton android:id="@+id/radThoiVu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Thời vụ" />
+    </RadioGroup>
+
+    <Button android:id="@+id/btnAdd" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nhập NV" />
+
+    <ListView android:id="@+id/lvEmployee" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16dp"/>
+</LinearLayout>
